@@ -1,0 +1,39 @@
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    font-family: 'Verdana', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    color: #3498db;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family: 'Georgia', serif;
+}
+
+ul {
+    font-size: 1.1em;
+    color: #34495e;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
