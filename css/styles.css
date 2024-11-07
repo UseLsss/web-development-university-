@@ -5,30 +5,79 @@ body {
 }
 
 header {
-    background-color: darkblue;
-    padding: 10px;
-    text-align: center;
-    color: white;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.menu ul {
+.header-content h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.menu {
+    width: 250px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 60px; /* Отступ для размещения под хедером */
+    left: 0;
+    height: calc(100% - 60px); /* Высота с учетом хедера */
+    overflow-y: auto;
+}
+
+.menu .main-menu {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-.menu li {
-    display: inline;
-    margin-right: 15px;
+.menu .main-menu > li {
+    position: relative;
+    margin: 15px 0;
 }
 
-.menu a {
+.menu .main-menu > li > a {
     color: black;
     text-decoration: none;
     font-family: 'Georgia', serif;
+    display: block;
+    padding: 5px 10px;
+}
+
+.menu .submenu {
+    display: none;
+    background-color: darkblue;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu .submenu li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.menu .submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu .submenu li a:hover {
+    background-color: #333; /* Цвет фона при наведении */
 }
 
 .content {
+    margin-left: 270px; /* Оставляет место для меню */
     padding: 20px;
     background-color: #f4f4f4;
 }
-

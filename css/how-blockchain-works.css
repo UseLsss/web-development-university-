@@ -18,7 +18,7 @@ p {
     font-family: 'Georgia', serif;
 }
 
-ul {
+ol, ul {
     font-size: 1.1em;
     color: #34495e;
     background-color: #ecf0f1;
@@ -36,4 +36,29 @@ img {
 .highlight {
     font-weight: bold;
     color: #e74c3c;
+}
+
+/* Контейнер для разделения текста и изображений */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px; /* Отступ сверху */
+    border: 2px solid black; /* Черное обрамление контейнера */
+    padding: 20px; /* Отступ внутри контейнера */
+}
+
+.text-section {
+    width: 48%; /* Текстовая часть будет занимать 48% от ширины контейнера */
+    border: 2px solid black; /* Черное обрамление текстового блока */
+    padding: 15px; /* Отступ внутри текстового блока */
+}
+
+.image-section {
+    width: 48%; /* Изображение будет занимать 48% от ширины контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Черное обрамление блока с изображением */
+    padding: 15px; /* Отступ внутри блока с изображением */
 }
