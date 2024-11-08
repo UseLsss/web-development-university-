@@ -147,3 +147,107 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 800px) {
+
+    .header {
+        margin-bottom: 100px;
+    }
+    .menu {
+        margin-top: 100px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 20px 10px;
+    }
+    
+    .menu .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы */
+        justify-content: center;
+    }
+
+    .menu .submenu {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu .submenu li {
+        width: 100%; /* Делаем элементы подменю на всю ширину */
+    }
+
+    .menu .submenu li a {
+        display: block;
+        width: 100%; /* Растягиваем ссылки на всю ширину */
+        padding: 10px; /* Увеличиваем отступ для удобства на мобильных */
+        box-sizing: border-box;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding-top: 120px; /* Отступ для фиксированного меню */
+    }
+
+    .footer{
+        margin-left: 0;
+    }
+}
+
+/* Адаптивные стили для экранов менее 400px */
+@media (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .menu {
+        margin-top: 100px;
+        width: 100%;
+        padding: 15px 10px;
+        position: relative;
+    }
+    
+    .menu .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .menu .submenu {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .menu .submenu li {
+        width: 100%; /* Делаем элементы подменю на всю ширину */
+    }
+
+    .menu .submenu li a {
+        display: block;
+        width: 100%; /* Растягиваем ссылки на всю ширину */
+        padding: 10px; /* Увеличиваем отступ для удобства на мобильных */
+        box-sizing: border-box;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 100px;
+    }
+
+    .footer h3 p a{
+        margin-left: 0;
+    }
+}
