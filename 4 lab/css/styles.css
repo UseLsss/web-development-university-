@@ -1,0 +1,275 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.header-buttons button {
+    background-color: #0a1435;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-buttons button:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.menu {
+    width: 250px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px); 
+    overflow-y: auto;
+}
+
+.menu .main-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .main-menu > li {
+    position: relative;
+    margin: 15px 0;
+}
+
+.menu .main-menu > li > a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    display: block;
+    padding: 5px 10px;
+}
+
+.menu .submenu {
+    display: none;
+    background-color: darkblue;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu .submenu li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.menu .submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu .submenu li a:hover {
+    background-color: #333;
+}
+
+.menu-footer-button {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-footer-button a {
+    display: block;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-footer-button a:hover {
+    background-color: #004080; /* более темный оттенок */
+}
+
+.content {
+    margin-left: 270px; 
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+.footer {
+    background-color: #0a1435;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    clear: both;
+    margin-left: 220px;
+    height: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-info, .address, .social-media {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        margin-bottom: 100px;
+    }
+    .menu {
+        margin-top: 100px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 20px 10px;
+    }
+    
+    .menu .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы */
+        justify-content: center;
+    }
+
+    .menu .submenu {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu .submenu li {
+        width: 100%; /* Делаем элементы подменю на всю ширину */
+    }
+
+    .menu .submenu li a {
+        display: block;
+        width: 100%; /* Растягиваем ссылки на всю ширину */
+        padding: 10px; /* Увеличиваем отступ для удобства на мобильных */
+        box-sizing: border-box;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding-top: 120px; /* Отступ для фиксированного меню */
+    }
+
+    .footer{
+        margin-left: 0;
+    }
+}
+
+/* Адаптивные стили для экранов менее 400px */
+@media (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .menu {
+        margin-top: 100px;
+        width: 100%;
+        padding: 15px 10px;
+        position: relative;
+    }
+    
+    .menu .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .menu .submenu {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .menu .submenu li {
+        width: 100%; /* Делаем элементы подменю на всю ширину */
+    }
+
+    .menu .submenu li a {
+        display: block;
+        width: 100%; /* Растягиваем ссылки на всю ширину */
+        padding: 10px; /* Увеличиваем отступ для удобства на мобильных */
+        box-sizing: border-box;
+    }
+
+    
+
+    .content {
+        margin-left: 0;
+        padding-top: 100px;
+    }
+
+    .footer h3 p a{
+        margin-left: 0;
+    }
+}
