@@ -195,3 +195,37 @@ img {
     background-color: #F39C12; /* Желтый при наведении */
     transform: translateY(-5px); /* Легкий подъем при наведении */
 }
+
+
+.text-section h2 {
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Анимация для параграфов */
+.text-section p {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Анимация для списков */
+.text-section ul {
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+/* При наведении на заголовок */
+.text-section h2:hover {
+    transform: rotate(10deg);
+    color: #2ecc71;
+    font-size: 1.2em;
+}
+
+/* При наведении на параграф */
+.text-section p:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-5px);
+}
+
+/* При наведении на список */
+.text-section ul:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}

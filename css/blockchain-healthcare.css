@@ -193,3 +193,29 @@ img {
     background-color: #ff6347; /* Томато-оранжевый при наведении */
     transform: scale(1.1); /* Легкое увеличение при наведении */
 }
+
+.content-container .text-section h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Стили для изображения */
+.content-container .image-section img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Эффект при наведении на блоки */
+.content-container .text-section:hover h2 {
+    transform: translateY(-10px); /* Поднимем текст вверх */
+    color: #1e90ff; /* Изменим цвет текста */
+}
+
+.content-container .image-section:hover img {
+    transform: scale(1.05); /* Увеличиваем изображение */
+    opacity: 0.8; /* Добавляем полупрозрачность */
+}
+
+/* Дополнительная анимация для всего блока */
+.content-container:hover {
+    transform: scale(1.02); /* Немного увеличиваем весь блок */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}

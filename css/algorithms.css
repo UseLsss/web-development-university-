@@ -195,3 +195,96 @@ img {
 .menu-footer-button a:hover {
     background-color: #41416d; /* Более светлый оттенок при наведении */
 }
+
+@keyframes headerSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Анимация для параграфов */
+@keyframes paragraphBlurIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Анимация для изображений */
+@keyframes imageRotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+/* Анимация для контейнера */
+@keyframes containerScaleTilt {
+    from {
+        transform: scale(1) rotate(0);
+    }
+    to {
+        transform: scale(1.05) rotate(2deg);
+    }
+}
+
+/* Применение анимаций */
+
+/* Анимация для заголовков (h2) */
+.content-container h2:hover {
+    animation: headerSlideIn 0.6s ease-out forwards;
+}
+
+/* Анимация для параграфов (p) */
+.content-container p:hover {
+    animation: paragraphBlurIn 0.6s ease-out forwards;
+}
+
+/* Анимация для изображений */
+.image-section img:hover {
+    animation: imageRotateIn 0.6s ease-out forwards;
+}
+
+/* Анимация для всего контейнера */
+.content-container:hover {
+    animation: containerScaleTilt 0.4s ease-in-out forwards;
+}
+
+/* Дополнительные стили */
+.text-section h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.text-section p {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-section img {
+    transition: transform 0.3s ease;
+}
+
+/* Стили для отдельных элементов в блоках */
+.text-section h2:hover {
+    color: #FF6347;  /* Цвет при наведении на заголовок */
+}
+
+.text-section p:hover {
+    color: #333;  /* Цвет при наведении на параграф */
+}
+
+.image-section img:hover {
+    transform: scale(1.05);  /* Увеличение изображения */
+}

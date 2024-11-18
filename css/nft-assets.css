@@ -195,3 +195,47 @@ img {
     background-color: #C0392B; /* Тёмно-красный при наведении */
     transform: translateY(-5px); /* Легкий подъем при наведении */
 }
+
+
+.text-section {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .text-section:hover {
+    transform: scale(1.05);
+    color: #007BFF; /* Цвет текста при наведении */
+  }
+  
+  /* Анимация для изображения */
+  .image-section img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+  }
+  
+  .image-section:hover img {
+    transform: scale(1.1) rotate(5deg); /* Увеличение и наклон изображения */
+    filter: brightness(1.2); /* Яркость изображения */
+  }
+  
+  /* Анимация для контейнера */
+  .content-container {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content-container:hover {
+    background-color: #f0f0f0; /* Светлый фон при наведении */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тень для контейнера */
+  }
+  
+  /* Дополнительные анимации для заголовков и текста при наведении */
+  h1:hover, h2:hover {
+    color: #FF6347; /* Цвет при наведении на заголовки */
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .text-section p:hover {
+    color: #FF6347; /* Цвет текста при наведении на абзац */
+    transform: translateX(10px); /* Сдвиг текста при наведении */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  

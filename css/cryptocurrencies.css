@@ -187,3 +187,63 @@ img {
 .menu-footer-button a:hover {
     background-color: #6a5acd; /* Синие оттенки при наведении */
 }
+
+
+.text-section h2:hover {
+    color: #FF6347; /* Цвет при наведении на заголовок */
+    transform: scale(1.1) translateY(-5px); /* Легкое увеличение и подъем */
+    transition: transform 0.3s ease-in-out; /* Плавная анимация */
+}
+
+/* Масштабирование при наведении на параграфы (p) */
+.text-section p:hover {
+    color: #20B2AA; /* Цвет при наведении на параграф */
+    transform: translateX(10px) scale(1.05); /* Легкое смещение вправо и увеличение */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Плавная анимация */
+}
+
+/* Масштабирование при наведении на изображения */
+.image-section img:hover {
+    transform: rotateY(15deg) scale(1.05); /* Легкое вращение изображения и увеличение */
+    opacity: 0.85; /* Чуть уменьшенная прозрачность */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Плавная анимация */
+}
+
+/* Масштабирование при наведении на контейнер */
+.content-container:hover {
+    transform: scale(1.05); /* Легкое увеличение контейнера */
+    transition: transform 0.3s ease-in-out; /* Плавная анимация */
+}
+
+/* Контейнер для разделения текста и изображений */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    border: 2px solid #2c3e50; /* Черное обрамление контейнера */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Плавная анимация при наведении */
+}
+
+/* Стили для текстовых блоков */
+.text-section {
+    width: 48%;
+    padding: 15px;
+    background-color: #f4f9f9;
+    border: 4px dashed #1abc9c; /* Пунктирная граница */
+    border-radius: 8px;
+}
+
+/* Стили для блока с изображением */
+.image-section {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+    border: 5px double #9b59b6; /* Двойная граница */
+    border-radius: 8px;
+    padding: 15px;
+}

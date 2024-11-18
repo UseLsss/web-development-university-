@@ -193,3 +193,32 @@ img {
     transform: scale(1.05); /* Легкое увеличение */
 }
 
+
+.text-section h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.text-section h2:hover {
+    transform: scale(1.1);  /* Увеличиваем эффект увеличения */
+    color: #0077cc;  /* Устанавливаем яркий контрастный цвет */
+}
+
+/* Анимация для параграфов */
+.text-section p {
+    transition: opacity 0.3s ease;
+}
+
+.text-section p:hover {
+    opacity: 1;  /* Убираем прозрачность и делаем текст полностью видимым */
+    color: #333;  /* Устанавливаем темный контрастный цвет текста */
+}
+
+/* Анимация для блоков текста */
+.text-section {
+    transition: background-color 0.3s ease;
+}
+
+.text-section:hover {
+    background-color: #e0e0e0;  /* Светлый фон для выделения */
+}
+

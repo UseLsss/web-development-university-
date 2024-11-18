@@ -195,3 +195,31 @@ img {
     background-color: #1ABC9C; /* Изменение цвета кнопки */
     transform: translateY(-5px); /* Легкий подъем при наведении */
 }
+
+
+.text-section h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.text-section h2:hover {
+    transform: scale(1.05);
+    color: #0077cc;
+}
+
+/* Анимация для параграфов */
+.text-section p {
+    transition: opacity 0.3s ease;
+}
+
+.text-section p:hover {
+    opacity: 0.7;
+}
+
+/* Анимация для изображения */
+.image-section img {
+    transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.1);
+}

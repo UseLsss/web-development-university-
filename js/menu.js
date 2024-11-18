@@ -20,3 +20,24 @@ document.querySelectorAll('.menu .main-menu > li').forEach(function (menuItem) {
         }
     });
 });
+
+
+
+// Получаем элементы
+const image = document.getElementById("expandable-image");
+const overlay = document.getElementById("overlay");
+const expandedImage = document.getElementById("expanded-image");
+
+// Когда кликаем на изображение
+image.addEventListener("click", function() {
+    // Показываем модальное окно
+    overlay.classList.add("visible");
+    // Устанавливаем источник увеличенного изображения
+    expandedImage.src = image.src;
+});
+
+// Когда кликаем на фон модального окна
+overlay.addEventListener("click", function() {
+    // Скрываем модальное окно
+    overlay.classList.remove("visible");
+});

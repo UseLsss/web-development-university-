@@ -187,3 +187,95 @@ img {
 .menu-footer-button a:hover {
     background-color: #FF4500; /* Оранжевый при наведении */
 }
+
+/* Основные стили анимаций */
+
+/* Анимация для заголовков */
+@keyframes headerStretch {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+/* Анимация для параграфов */
+@keyframes paragraphRise {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Анимация для изображений */
+@keyframes imageZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Анимация для контейнера */
+@keyframes containerSlideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Применение анимаций */
+
+/* Анимация для заголовков (h2) */
+.content-container h2 {
+    opacity: 0;
+    animation: headerStretch 0.8s ease-out forwards;
+}
+
+/* Анимация для параграфов (p) */
+.content-container p {
+    opacity: 0;
+    animation: paragraphRise 1s ease-out forwards;
+}
+
+/* Анимация для изображений */
+.image-section img {
+    opacity: 0;
+    animation: imageZoom 1s ease-out forwards;
+}
+
+/* Анимация для контейнера */
+.content-container {
+    opacity: 0;
+    animation: containerSlideIn 0.8s ease-out forwards;
+}
+
+/* Дополнительные стили */
+.text-section h2:hover {
+    color: #32CD32; /* Цвет при наведении на заголовок */
+    transform: scale(1.05); /* Легкое увеличение заголовка */
+}
+
+.text-section p:hover {
+    color: #666; /* Цвет при наведении на параграф */
+    transform: translateY(-5px); /* Подъем параграфа */
+}
+
+.image-section img:hover {
+    transform: scale(1.1); /* Увеличение изображения */
+    opacity: 0.9; /* Чуть уменьшенная прозрачность */
+}
