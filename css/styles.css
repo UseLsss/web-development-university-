@@ -109,6 +109,26 @@ body {
     background-color: #333;
 }
 
+.menu-footer-button {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-footer-button a {
+    display: block;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-footer-button a:hover {
+    background-color: #004080; /* более темный оттенок */
+}
+
 .content {
     margin-left: 270px; 
     padding: 20px;
@@ -241,6 +261,8 @@ body {
         padding: 10px; /* Увеличиваем отступ для удобства на мобильных */
         box-sizing: border-box;
     }
+
+    
 
     .content {
         margin-left: 0;

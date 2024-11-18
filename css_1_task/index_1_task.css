@@ -1,0 +1,87 @@
+/* Стили для заголовков */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    font-family: 'Verdana', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    color: #3498db;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    border-bottom: 3px solid #3498db; /* Синяя граница под заголовками */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Стили для текста и списков */
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family: 'Georgia', serif;
+}
+
+ul {
+    font-size: 1.1em;
+    color: #34495e;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+p:nth-child(even) {
+    background-color: #eaf2f8; /* Голубой фон */
+    border: 3px groove #3498db; /* Рельефная граница */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Стили для выделения текста */
+.highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Стили для таблицы */
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #2c3e50; /* Черное обрамление таблицы */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content-table td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+/* Стили для ячеек таблицы */
+.text-cell {
+    width: 60%;
+    background-color: #f4f9f9;
+    border: 4px dashed #1abc9c; /* Пунктирная граница */
+    border-radius: 8px;
+}
+
+.image-cell {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+    border: 5px double #9b59b6; /* Двойная граница */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
